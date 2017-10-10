@@ -18,5 +18,16 @@ public class Rational {
 	    return num + "/" + denom;
     }
 
-    
+    /**
+     For testing getters.
+     */
+
+    public static void main (String [] args) {
+	    Rational r = new Rational(5,7);
+	    System.out.println("r.getNumerator()=" + r.getNumerator());
+	    System.out.println("r.getDenominator()=" + r.getDenominator());
+    }
+
+   public int getNumerator() { return this.num; }
+   public int getDenominator() { return this.denom; } 
 }
